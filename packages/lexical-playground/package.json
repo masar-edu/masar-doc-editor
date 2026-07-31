@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host --port 3000",
-    "build-dev": "vite build",
-    "build-prod": "vite build --mode production",
-    "build-vercel": "(cd ../../ && node ./scripts/build.js) && npm run build-dev",
+    "dev": "node init && vite --host --port 3000",
+    "build-dev": "node init && vite build",
+    "build-prod": "node init && vite build --mode production",
+    "build-vercel": "node init && (cd ../../ && node ./scripts/build.js) && npm run build-dev",
     "preview": "vite preview"
   },
   "dependencies": {
