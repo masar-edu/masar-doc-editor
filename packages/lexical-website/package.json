@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": " TYPEDOC_WATCH=true docusaurus start",
-    "build": "IGNORE_PEER_DEPENDENCIES=react docusaurus build",
+    "start": "node init &&  TYPEDOC_WATCH=true docusaurus start",
+    "build": "node init && IGNORE_PEER_DEPENDENCIES=react docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
