@@ -4,9 +4,9 @@
   "version": "0.36.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node init && vite",
     "monorepo:dev": "vite -c vite.config.monorepo.ts",
-    "build": "tsc && vite build",
+    "build": "node init && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
